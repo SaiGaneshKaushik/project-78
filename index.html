@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>My Fimily Book</title>
+        <script herf="stylesheet" src="style.css"></script>
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <hr> <hr>
+        <img id="family_img" src="https://tse2.mm.bing.net/th?id=OIP.ml0Uu4nIp1s81eevnNJ9bwHaHa&pid=Api&P=0&w=300&h=300">
+        <h3 id="one">1.Our Family Book</h3>
+        <button type="button" onclick="family()">Next</button>
+        <hr>
+        <script>
+            var names= [
+                "1.father(M.Bhaskar Rao)",
+                "2.mother(M.Suneeta)",
+                "3.sister(M.Yamini)",
+                "4.me(M.Sai Ganesh Kaushik)"
+            ];
+            var images= [
+                "https://share.icloud.com/photos/0Y2HTZqpPMw8T7oNlecKNtpbg#Medchal_Malkajgiri_-_Kompalli",
+                "https://share.icloud.com/photos/0NsZ6Fs7QCTzsLMH45m2ZTkOg#Medchal_Malkajgiri_-_Kompalli",
+                "https://share.icloud.com/photos/0h1oTlNXNBFCIfeMDHC6PAnBQ",
+                "https://share.icloud.com/photos/0Y2HTZqpPMw8T7oNlecKNtpbg#Medchal_Malkajgiri_-_Kompalli"
+            ];
+            var i=0
+            function family()
+            document.getElementById("one").innerHTML=names[i];
+            document.getElementById("family_img").src=images[i];
+            i++;
+            if(i==4){
+            i=0;
+            }
+        </script>
+    </body>
+</html>
